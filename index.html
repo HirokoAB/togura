@@ -4,24 +4,17 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="assets/js/jquery.rwdImageMaps.min.js"></script>
 	<title>戸倉NPサンプルページ</title>
+
+
 </head>
 <body>
 
-	<map name="ImageMap">
-			<area href="http://kawatouminovisitorcenter.jp/umi/index.html" coords="406,326,554,395" shape="rect" alt="">
-	</map>
-
-	  <img src="assets/img/tnp190404_ol.svg" usemap="#ImageMap" alt="" style="width:80%; height:auto; text-align: center;" >
-		
-
-
-
-		<img src="assets/img/tnp190404_ol.jpg" usemap="#ImageMap" style="max-width:90%; margin: auto;">
+	<img src="assets/img/tnp190404_ol.jpg" usemap="#ImageMap" alt="" class="imgmap"/>
 <map name="ImageMap">
-  <area shape="rect" coords="99,82,135,96" href="http://kawatouminovisitorcenter.jp/umi/index.html" alt="" />
-
-		<img src="assets/img/tnp190404_ol.png" usemap="#ImageMap" style="max-width:90%; margin: auto;">
+  <area shape="rect" coords="1802,1367,2298,1611" href="http://kawatouminovisitorcenter.jp/umi/index.html" alt="" />
 </map>
 	
 
@@ -29,7 +22,9 @@
 
 
 
+<script>
+        $('img[usemap]').rwdImageMaps();
+    </script>
 
-	
 </body>
 
