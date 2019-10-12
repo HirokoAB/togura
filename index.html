@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+	
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,17 +12,50 @@
 
 </head>
 <body>
+	<main>
+		<section>
+			<div class="map_container">
+				<div class="map base">
+					<img src="assets/img/map_base.png" usemap="#ImageMap" alt="" class="imgmap"/>
+					<map name="ImageMap">
+			  		<area shape="rect" coords="1802,1367,2298,1611" href="http://kawatouminovisitorcenter.jp/umi/index.html" alt="" />
+					</map>
+				</div>
+				<div class="map main_title">
+					<img src="assets/img/map_title.svg">	
+				</div>
+				<div class="map sub_title">
+					<img src="assets/img/map_sub_title.svg">	
+				</div>
+				<div class="map index">
+					<img src="assets/img/map_index.svg">
+				</div>
+				<div class="map label">
+					<img src="assets/img/map_label.svg">
+				</div>
+				<div class="map label_sec">
+					<img src="assets/img/map_lavel_2.svg">
+				</div>
+				<div class="map item">
+					<img src="assets/img/map_overitem.svg">
+				</div>
+				<div class="map compass shake">
+					<img src="assets/img/map_compass.svg">
+				</div>
+				<div class="map keybox shake">
+					<img src="assets/img/map_keybox.svg">
+				</div>
+				<div class="map eagle shake">
+					<img src="assets/img/map_eagle.svg">
+				</div>
 
-	<img src="assets/img/tnp190404_ol.jpg" usemap="#ImageMap" alt="" class="imgmap"/>
-<map name="ImageMap">
-  <area shape="rect" coords="1802,1367,2298,1611" href="http://kawatouminovisitorcenter.jp/umi/index.html" alt="" />
-</map>
+			</div>
 	
 
 
 
-
-
+		</section>
+	</main>
 <script>
         $('img[usemap]').rwdImageMaps();
     </script>
