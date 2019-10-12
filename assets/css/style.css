@@ -1,8 +1,48 @@
-*{
-  background-color: white
-;
+
+
+
+.map_container{
+	position: relative;
+	width: 100%;
+	height: auto;
 }
 
 .imgmap{
-	width:100%;
+	width: 100%;
+}
+
+.map{
+	position: absolute;
+	top:0;
+	height: 100%;
+	width: 100%;
+
+}
+
+.label , .label_sec{
+	z-index: 10;
+}
+
+
+.label_sec{
+	display: none;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:480px){
+  .map_container{
+/*    transform:rotate(90deg);*/
+    margin:auto;
+  }
+	.index,.label{
+		display: none;
+	}
+	.label_sec{
+		display: inline;
+	}
 }
