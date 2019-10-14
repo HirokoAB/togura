@@ -1,0 +1,147 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+area{
+border:none;
+outline:none;
+}
+
+
+.video_wrappar{
+	display: flex;
+	justify-content:center;
+	z-index:2;
+	background: url(../img/noise.png)center; 
+}
+
+.video_wrappar > img{
+	width:100%;
+	height: 100%;
+	// background-color:rgba(0,0,0,0.5);
+	z-index:5;
+}
+
+video{
+position: fixed;
+right: 0;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: 1;
+}
+
+.map_container{
+	position: absolute;
+	width: 90%;
+	height: auto;
+	z-index:3;
+}
+
+.base{
+	width: 100%;
+}
+
+.map{
+	position: absolute;
+	top:0;
+	height: 100%;
+	width: 100%;
+
+}
+
+.label , .label_sec{
+	z-index: 10;
+}
+
+
+
+
+
+//画面の縮尺によって出現する//
+.label_sec{
+	display: none;
+}
+
+.item{
+	z-index:99;
+}
+//////////////////////////////////////////
+////////////map要素の動きを指定////////////
+//////////////////////////////////////////
+
+.shake {
+    animation:shake 8s infinite ease-in alternate;
+}
+
+@keyframes shake {
+    0% {transform:translate(0, 0) rotate(-10deg);}
+    50% {transform:translate(0, -3px) rotate(0deg);}
+    100% {transform:translate(0, 0)rotate(5deg);}
+}
+
+
+.shake_sec {
+    animation:shake 0.5s infinite ease-in alternate;
+}
+
+
+.rotate {
+    animation:rotate 4s infinite linear alternate;
+}
+
+@keyframes rotate {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+
+.flash {
+	 animation:Flash 1s infinite;
+}
+@keyframes Flash{
+  50%{
+    opacity: 0.3;
+  }
+}
+
+.holizonal {
+  animation: horizontal 2s ease-in-out infinite alternate;
+}
+.holizonal_sec {
+  animation: horizontal 0.08s linear infinite alternate;
+}
+
+.vertical {
+  animation: vertical 2s ease-in-out infinite alternate;
+}
+@keyframes horizontal {
+    0% { transform:translateX( -5px); }
+    50%{transform:translateX(    0px);}
+  100% { transform:translateX(  5px); }
+}
+@keyframes vertical {
+    0% { transform:translateY( -2px); }
+  100% { transform:translateY(  0px); }
+}
+
+
+
+//////////////////////////////////////////
+/////////////レスポンシブ対応////////////////
+//////////////////////////////////////////
+
+@media screen and (max-width:480px){
+  .map_container{
+/*    transform:rotate(90deg);*/
+    margin:auto;
+  }
+	.index,.label{
+		display: none;
+	}
+	.label_sec{
+		display: inline;
+	}
+}

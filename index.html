@@ -5,8 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="assets/js/jquery.rwdImageMaps.min.js"></script>
+
 	<title>戸倉NPサンプルページ</title>
 
 
@@ -14,51 +13,82 @@
 <body>
 	<main>
 		<section>
-			<div class="map_container">
-				<div class="map base">
-					<img src="assets/img/map_base.png" usemap="#ImageMap" alt="" class="imgmap"/>
-					<map name="ImageMap">
-			  		<area shape="rect" coords="1802,1367,2298,1611" href="http://kawatouminovisitorcenter.jp/umi/index.html" alt="" />
+			<div class="video_wrappar">
+				<!-- <img src="assets/img/noise.png"> -->
+
+			  <!-- <video src="assets/img/bk_sky1.mp4" autoplay muted loop playsinline ></video>
+ -->				<div class="map_container">
+						<div class="map base">
+							<img src="assets/img/map_base.png" alt="" class="base"/>
+						</div>
+						<div class="map main_title">
+							<img src="assets/img/map_title.svg">	
+						</div>
+						<div class="map sub_title">
+							<img class=""src="assets/img/map_sub_title.svg">	
+						</div>
+						<div class="map index ">
+							<img class="" src="assets/img/map_index.svg">
+						</div>
+						<div class="map label vertical">
+							<img class="horizontal" src="assets/img/map_label.svg">
+						</div>
+						<div class="map label_sec">
+							<img src="assets/img/map_lavel_2.svg">
+						</div>
+						<div class="map item">
+							<img src="assets/img/map_overitem.svg" usemap="#tgitem" alt="ネイチャーパークスッポット名">
+						</div>
+						<div class="map keybox" id="">
+							<img src="assets/img/map_keybox.svg">
+						</div>
+						<div class="map eagle shake">
+							<img  src="assets/img/map_eagle.svg">
+						</div>
+						<div class="map compass">
+							<img class="" src="assets/img/map_compass.svg">
+						</div>
+					
+
+					<map name="tgitem">
+					  <area onFocus="this.blur();" shape="rect" coords="64,70,78,86" href="https://www.tamipack.jp/" alt="たみ子の海パックホームページへ遷移" target="blank" />
+					  <area onFocus="this.blur();" shape="rect" coords="50,92,85,108" href="#" alt="釣り体験" target="blank" />
+					  <area onFocus="this.blur();" shape="rect" coords="91,108,121,134" href="#https://o-eels.org/" alt="おきなくらイールズホームページへ遷移" target="blank" />
+					  <area onFocus="this.blur();" shape="rect" coords="143,90,179,100" href="#" alt="漁業体験" target="blank" />
+					  <area onFocus="this.blur();" shape="rect" coords="142,66,167,79" href="https://m-inuwashi.jp/" alt="南三陸町ネイチャーセンターホームページへ遷移" target="blank" />
+					  <area onFocus="this.blur();" shape="rect" coords="124,38,148,55" href="http://studio-elephant.com/flow/" alt="波伝の森山学校ホームページへ遷移" target="blank" />
+					  <area onFocus="this.blur();" shape="rect" coords="105,71,134,81" href="http://kawatouminovisitorcenter.jp/umi/index.html" alt="海のビジターセンターホームページへ遷移" target="blank" />
+					  <area onFocus="this.blur();" shape="rect" coords="24,67,52,82" href="神割キャンプ場ホームページへ遷移" alt="神割キャンプ場ホームページへ遷移" target="blank" />
+					  <area onFocus="this.blur();" shape="rect" coords="87,59,115,71" href="https://www.pref.miyagi.jp/soshiki/sz-seinen/" alt="志津川自然の家ホームページへ遷移" target="blank" />
 					</map>
-				</div>
-				<div class="map main_title">
-					<img src="assets/img/map_title.svg">	
-				</div>
-				<div class="map sub_title">
-					<img src="assets/img/map_sub_title.svg">	
-				</div>
-				<div class="map index">
-					<img src="assets/img/map_index.svg">
-				</div>
-				<div class="map label">
-					<img src="assets/img/map_label.svg">
-				</div>
-				<div class="map label_sec">
-					<img src="assets/img/map_lavel_2.svg">
-				</div>
-				<div class="map item">
-					<img src="assets/img/map_overitem.svg">
-				</div>
-				<div class="map compass shake">
-					<img src="assets/img/map_compass.svg">
-				</div>
-				<div class="map keybox shake">
-					<img src="assets/img/map_keybox.svg">
-				</div>
-				<div class="map eagle shake">
-					<img src="assets/img/map_eagle.svg">
-				</div>
-
-			</div>
-	
-
-
-
-		</section>
+					</div>
+			<video src="assets/img/bk_sky5.mp4" autoplay muted loop playsinline ></video> 
+		</div>
+	</section>
 	</main>
+	<aside>
+
+
+	</aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="assets/js/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="assets/js/jquery.rwdImageMaps.min.js"></script>
 <script>
         $('img[usemap]').rwdImageMaps();
-    </script>
+</script>
 
 </body>
 
