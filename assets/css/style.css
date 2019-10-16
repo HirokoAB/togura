@@ -36,17 +36,6 @@ video {
   z-index: 1;
 }
 
-.map_container {
-  position: absolute;
-  width: 90%;
-  height: auto;
-  z-index: 3;
-}
-
-.base {
-  width: 100%;
-}
-
 .map {
   position: absolute;
   top: 0;
@@ -54,8 +43,26 @@ video {
   width: 100%;
 }
 
+.map_container {
+  margin-top: -2%;
+  position: absolute;
+  width: 90%;
+  height: auto;
+  z-index: 3;
+}
+
+.base_img {
+  width: 100%;
+  -webkit-transform: perspective(700px) rotateX(55deg);
+  transform: perspective(700px) rotateX(55deg);
+}
+
 .label, .label_sec {
   z-index: 10;
+}
+
+.mian_title.sub_title {
+  margin-top: 3px;
 }
 
 .label_sec {
@@ -64,6 +71,12 @@ video {
 
 .item {
   z-index: 99;
+  -webkit-transform: rotatex(-10deg);
+  transform: rotatex(-10deg);
+}
+
+.item_up {
+  margin-top: -1%;
 }
 
 .shake {
@@ -81,8 +94,8 @@ video {
     transform: translate(0, -3px) rotate(0deg);
   }
   100% {
-    -webkit-transform: translate(0, 0) rotate(5deg);
-    transform: translate(0, 0) rotate(5deg);
+    -webkit-transform: translate(0, 0) rotate(10deg);
+    transform: translate(0, 0) rotate(10deg);
   }
 }
 
@@ -96,8 +109,8 @@ video {
     transform: translate(0, -3px) rotate(0deg);
   }
   100% {
-    -webkit-transform: translate(0, 0) rotate(5deg);
-    transform: translate(0, 0) rotate(5deg);
+    -webkit-transform: translate(0, 0) rotate(10deg);
+    transform: translate(0, 0) rotate(10deg);
   }
 }
 
@@ -165,6 +178,11 @@ video {
   animation: vertical 2s ease-in-out infinite alternate;
 }
 
+.vertical_sec {
+  -webkit-animation: vertical 0.08s ease-in-out infinite alternate;
+  animation: vertical 0.08s ease-in-out infinite alternate;
+}
+
 @-webkit-keyframes horizontal {
   0% {
     -webkit-transform: translateX(-5px);
@@ -197,8 +215,12 @@ video {
 
 @-webkit-keyframes vertical {
   0% {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  50% {
+    -webkit-transform: translateY 0px;
+    transform: translateY 0px;
   }
   100% {
     -webkit-transform: translateY(0px);
@@ -208,8 +230,12 @@ video {
 
 @keyframes vertical {
   0% {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  50% {
+    -webkit-transform: translateY 0px;
+    transform: translateY 0px;
   }
   100% {
     -webkit-transform: translateY(0px);
